@@ -8,7 +8,7 @@ namespace RuleForEachValidation;
 public class Controller : ControllerBase
 {
     [HttpGet]
-    public IActionResult Test(QueryDto parameters)
+    public IActionResult Test([FromQuery]QueryDto parameters)
     {
         return Ok();
     }
